@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+}
+
+.main {
+  padding-top: 3%;
+}
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 2% 0 2% 0;
+  margin-bottom: 2%;
+  max-height: 650px;
+}
+
+.project {
+  object-fit: cover;
+  width:200px;
+  height:150px;
+}
