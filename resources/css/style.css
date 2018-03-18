@@ -1,5 +1,45 @@
+html {
+    height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #fffae8, #e6e7d7, #ced4c7, #b8c1b7, #a3aea7);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row {
+  margin: 0 5%;
+}
+
+.headshot {
+  margin: auto;
+  max-width: 70%;
+  border-radius: 5%;
+}
+
 .project {
   object-fit: cover;
   width:200px;
   height:150px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+}
+
+.form-control:focus {
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  border-radius: 0;
+  resize: none;
+  outline: 1px solid gray;
 }

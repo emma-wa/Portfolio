@@ -13,8 +13,8 @@
   <body>
 
     <!-- Header/navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Emma Wallerstein</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand">Emma Wallerstein</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,12 +35,23 @@
 
     <!-- about section -->
     <div class="container-fluid" id="about">
+      <h2 class="text-center">About</h2>
       <div class="row">
-        <div class="col">
-          <h2 class="text-center">About</h2>
-          <h3>I'm a front-end developer based in Madrid</h3>
-          <h3>I live with my partner and our grumpy cat</h3>
-          <h3>I like to study languages and take naps</h3>
+        <div class="col-sm-7 align-self-center">
+          <div class="object">
+            <h3 class="text-center">Me</h3>
+            <p class="text-right">My name is Emma and I'm a Teacher, Translator, and nascent front-end developer. I live in Spain and like all things related to languages, both human and machine. I enjoy taking a plan and making it a reality using HTML, CSS, and Javascript.<p>
+          </div>
+          <div class="object text-center">
+            <h3>Education & Experience</h3>
+            <ul>
+              <li>Bachelor of Arts, Spanish & Linguistics, NYU</li>
+              <li>Master of Education, Spanish Secondary Teaching, Pace<li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-5 text-center">
+          <img class="headshot" src="resources/media/images/me.jpg" alt="Emma Wallerstein">
         </div>
       </div>
     </div>
@@ -96,23 +107,37 @@
     <div class="container-fluid" id="contact">
       <h2 class="text-center">Contact</h2>
       <div class="row">
-        <div class="col-sm-6 text-center">
-          <h2 class="text-center">Links</h2>
-          <ul>
-            <li>Github</li>
-            <li>LinkedIn</li>
+        <div class="col-sm-3 text-center">
+          <h2 class="text-center">Around the web</h2>
+          <div>
+            <i>LinkedIn</i>
+            <i>Github</i>
+          </div>
           </ul>
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-9">
+          <h2 class="text-center">Message</h2>
           <form>
-            <ul>
-              <li>Name: <input type="text" name="name"></input></li>
-              <li>Email: <input type="email" name="email"></input></li>
-              <li>Let me know what you think!<textarea name"comment"></textarea></li>
-            </ul>
-            <button name="submit">
-              <span><strong>Send</strong></span>
-            </button>
+            <div class="row">
+              <div class="col">
+                <label for="NameInput"></label>
+                <input type="text" class="form-control" id="NameInput" placeholder="Your Name">
+              </div>
+              <div class="col">
+                <label for="EmailInput"></label>
+                <input type="email" class="form-control" id="EmailInput" placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10">
+                <label for="MessageInput"></label>
+                <textarea class="form-control" id="MessageInput" rows="3"
+                  placeholder="What's up?"></textarea>
+              </div>
+              <div class="col-2 align-self-center">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
