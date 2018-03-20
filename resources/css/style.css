@@ -8,15 +8,16 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 20px;
 }
 
 .bottom-buffer {
-  margin-bottom:20px;
+  margin-bottom: 2%;
 }
 
 .headshot {
   margin: auto;
-  max-width: 70%;
+  max-width: 65%;
   border-radius: 5%;
 }
 
