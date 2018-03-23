@@ -1,14 +1,40 @@
+/* colors:
+  - gold: .gold-text
+  - green: #79aaa2
+  - purple: #523563
+  - grey: #708090
+  */
+
 html {
     height: 100%;
 }
 
 body {
   /* background-image: linear-gradient(to bottom, #fffae8, #e6e7d7, #ced4c7, #b8c1b7, #a3aea7); */
+  background: url("../media/images/pattern2.jpg");
   height: 100%;
   margin: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: auto;
   padding-top: 5%;
+}
+
+.gold-text {
+    color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(https://c2.staticflickr.com/6/5680/22302333629_0d42d94d22_b.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+a {
+  color: #708090;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #79aaa2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .bottom-buffer {
@@ -54,7 +80,6 @@ body {
   background-color: transparent;
   border-radius: 0;
   resize: none;
-  outline: 1px solid gray;
 }
 
 .icons {
