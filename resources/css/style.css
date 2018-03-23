@@ -19,17 +19,13 @@ body {
   padding-top: 5%;
 }
 
-.gold-text {
-    color:#c3a343;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-    url(https://c2.staticflickr.com/6/5680/22302333629_0d42d94d22_b.jpg) repeat;
-    background: -o-linear-gradient(transparent, transparent);
-    -webkit-background-clip: text;
-}
-
 a {
   color: #708090;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #523563;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -39,6 +35,30 @@ a {
 
 .bottom-buffer {
   margin-bottom: 2%;
+}
+
+#pills-home h2 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 5rem;
+  padding: 8% 0 2% 0;
+}
+
+#pills-home h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+}
+
+.push {
+  padding-left: 10%;
+}
+
+.gold-text {
+    color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(https://c2.staticflickr.com/6/5680/22302333629_0d42d94d22_b.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
 }
 
 .headshot {
