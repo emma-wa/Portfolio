@@ -21,23 +21,18 @@
   <body>
 
     <!-- Header/navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills color" id="pills-tab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar fixed-top">
+      <ul class="nav nav-pills color" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- about section -->
@@ -46,8 +41,8 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-7 align-self-center text-center align-middle push">
-              <h2 class="gold-text">Emma Wallerstein</h2>
-              <h3>Teacher. Translator. Front-End Dev.</h3>
+              <h1 class="gold-text">Emma Wallerstein</h1>
+              <h2>Teacher. Translator. Front-End Dev.</h2>
             </div>
             <div class="col-sm-5 text-center">
               <img class="headshot" src="resources/media/images/me.jpg" alt="Emma Wallerstein">
@@ -57,14 +52,14 @@
       </div>
       <!-- portfolio section -->
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div class="container-fluid">
+        <div class="container-fluid top-buffer">
           <!-- row 1 -->
           <div class="row bottom-buffer">
             <div class="col-md-4 col-sm-6">
                 <div class="polaroid">
                 <a href="https://emma-wa.github.io/fotomatic/" target="_blank">
                   <img class="project" src="https://emma-wa.github.io/fotomatic/resources/images/feature-1.png">
-                  <h4>Fotomatic</h4>
+                  <h3>Fotomatic</h3>
                 </a>
               </div>
             </div>
@@ -72,7 +67,7 @@
               <div class="polaroid">
                 <a href="https://emma-wa.github.io/jumpstart/" target="_blank">
                   <img class="project" src="https://emma-wa.github.io/jumpstart/resources/media/images/featured-project.png">
-                  <h4>JumpStart</h4>
+                  <h3>JumpStart</h3>
                 </a>
               </div>
             </div>
@@ -80,7 +75,7 @@
               <div class="polaroid">
                 <a href="https://emma-wa.github.io/colmar/" target="_blank">
                   <img class="project" src="https://emma-wa.github.io/colmar/resources/media/images/banner.jpg">
-                  <h4>Colmar</h4>
+                  <h3>Colmar</h3>
                 </a>
               </div>
             </div>
@@ -92,7 +87,7 @@
               <div class="polaroid">
                 <a href="https://emma-wa.github.io/dads-website/" target="_blank">
                   <img class="project" src="https://emma-wa.github.io/dads-website/Resources/images/JoshuaTree10.jpg">
-                  <h4>Photography</h4>
+                  <h3>Photography</h3>
                 </a>
               </div>
             </div>
@@ -100,7 +95,7 @@
               <div class="polaroid">
                 <a href="#">
                   <img class="project" src="https://emma-wa.github.io/dads-website/Resources/images/landscape1.jpeg">
-                  <h4>Placeholder</h4>
+                  <h3>Placeholder</h3>
                 </a>
               </div>
             </div>
@@ -108,7 +103,7 @@
               <div class="polaroid">
                 <a href="#">
                   <img class="project" src="https://emma-wa.github.io/dads-website/Resources/images/landscape-washingtonriver.jpg">
-                  <h4>Placeholder2</h4>
+                  <h3>Placeholder2</h3>
                 </a>
               </div>
             </div>
@@ -117,7 +112,7 @@
       </div>
       <!-- contact section -->
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-        <div class="container-fluid">
+        <div class="container-fluid top-buffer">
           <div class="row">
             <div class="col-sm-3 text-center">
               <h2 class="text-center">Around the web</h2>
@@ -125,6 +120,7 @@
                 <a href="https://www.linkedin.com/in/emmawallerstein
     " target="_blank"><span class="fab fa-linkedin"></span></a>
                 <a href="https://github.com/emma-wa" target="_blank"><span class="fab fa-github-square"></span></a>
+                <a href="https://codepen.io/elw260/" target="_blank"><span class="fab fa-codepen"></span></a>
               </div>
               </ul>
             </div>
@@ -148,7 +144,7 @@
                       placeholder="What's up?"></textarea>
                   </div>
                   <div class="col-2 align-self-center">
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn">Send</button>
                   </div>
                 </div>
               </form>

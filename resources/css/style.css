@@ -5,18 +5,13 @@
   - grey: #708090
   */
 
-html {
-    height: 100%;
-}
-
 body {
-  /* background-image: linear-gradient(to bottom, #fffae8, #e6e7d7, #ced4c7, #b8c1b7, #a3aea7); */
   background: url("../media/images/pattern2.jpg");
-  height: 100%;
-  margin: 0;
   background-repeat: repeat;
   background-size: auto;
   padding-top: 5%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
 }
 
 a {
@@ -28,25 +23,40 @@ a:hover {
   color: #523563;
 }
 
+nav {
+  background-image: url("../media/images/pattern2.jpg");
+  z-index: 100;
+}
+
+.nav-pills {
+  font-size: 1.5rem;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: #79aaa2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.top-buffer {
+  margin-top: 2%;
 }
 
 .bottom-buffer {
   margin-bottom: 2%;
 }
 
-#pills-home h2 {
+#pills-home h1 {
   font-family: 'Rock Salt', cursive;
   font-size: 5rem;
   padding: 8% 0 2% 0;
 }
 
-#pills-home h3 {
-  font-family: 'Amatic SC', cursive;
+#pills-home h2 {
   font-size: 2.5rem;
+  color: #523563;
 }
+
 
 .push {
   padding-left: 10%;
@@ -73,6 +83,7 @@ a:hover {
   text-align: center;
   width: 80%;
   margin: auto;
+  background-color: #F8F7F3;
 }
 
 .project {
@@ -85,6 +96,11 @@ a:hover {
   padding: 10px 20px;
 }
 
+#pills-contact h2 {
+  font-size: 3.5rem;
+  color: #523563;
+}
+
 .form-control {
     border: none;
     border-bottom: 1px solid gray;
@@ -92,6 +108,7 @@ a:hover {
     border-radius: 0;
     resize: none;
     outline: none;
+    font-size: 2rem;
 }
 
 .form-control:focus {
@@ -102,6 +119,18 @@ a:hover {
   resize: none;
 }
 
+.btn {
+  font-size: 2rem;
+  background-color: #79aaa2;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #523563;
+}
+
 .icons {
-  font-size: 3rem;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
 }
