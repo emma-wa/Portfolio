@@ -23,20 +23,19 @@ a:hover {
   color: #523563;
 }
 
-nav {
-  background-image: url("../media/images/pattern2.jpg");
-  z-index: 100;
+.navbar {
+  background: url("../media/images/pattern2.jpg");
 }
 
 .nav-pills {
   font-size: 1.5rem;
+  margin-bottom: 2%;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: #79aaa2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 .top-buffer {
   margin-top: 2%;
@@ -48,12 +47,12 @@ nav {
 
 #pills-home h1 {
   font-family: 'Rock Salt', cursive;
-  font-size: 5rem;
+  font-size: 6.5vmax;
   padding: 8% 0 2% 0;
 }
 
 #pills-home h2 {
-  font-size: 2.5rem;
+  font-size: 3.25vmax;
   color: #523563;
 }
 
@@ -133,4 +132,56 @@ nav {
   font-size: 4rem;
   display: flex;
   flex-direction: column;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1047px) {
+  .top-buffer {
+    margin-top: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .headshot {
+    max-width: 40%;
+  }
+
+  #pills-home h2 {
+    margin-bottom: 3%;
+}
+
+  .push {
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .polaroid {
+    width: 65%;
+  }
+
+  .gold-text{
+    margin-top: 5%;
+  }
+
+  .top-buffer {
+    margin-top: 8%;
+  }
+
+  .icons {
+    display: inline;
+  }
+
+  .icons ~ a {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 459px) {
+  .gold-text{
+    margin-top: 8%;
+  }
 }
